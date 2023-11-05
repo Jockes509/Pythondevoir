@@ -25,3 +25,28 @@ print(cara_replace)
 cara_inverse= cara[::-1]
 cara_upper=cara_inverse.upper()
 print(cara_upper)
+
+
+#7) 
+cara2="for another love"
+cara_index= cara2.find('a')
+if cara_index !=-1:
+    print("the index for the first letter a is: ",cara_index)
+
+#8) 
+indexTot=0
+for i, ca in enumerate(cara):
+    if ca=='a' or ca=='A':
+        indexTot+=i
+print("Total tout index karakte a nan chen lan se: ",indexTot)
+
+#9)
+inda=[]
+for ind, car in enumerate(cara):
+    if car.lower()=='a':
+        inda.append(ind)
+print("Men lis index karaakte a yo: ",inda)
+
+#10)
+cse= cara.replace(' ','')
+print(cse)
