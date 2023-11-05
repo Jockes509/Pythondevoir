@@ -45,21 +45,31 @@ list_commun= list(e1.intersection(e2))
 print("Men lis ki gen elemean commun yo: ",list_commun)
 
 #8)
-dico= {"nom": "paula", "prenom":"dicaprio","sexe":"f","date-n":"2000"}
-
-list_tup= [(kle,vale) for kle, vale in dico.items()]
-print("resultat #8: ",list_tup)
+list_distinct=list(e1.symmetric_difference(e2))
+print("Men lis eleman distinct yo: ",list_distinct)
 
 #9)
-tuple1=list_tup
+dictio={"Nom":"Gui","Prenom":"Hat","Sexe":"F","tel":"34567890","adres":"delmas 20"}
 
-dico2={}
+kle=list(dictio.keys())
+vale=list(dictio.values())
 
-for clave, valor in tuple1: 
-    dico2[clave]= valor
-print("Dico2 steeve: ",dico2)
-    
-print("Le dictionnaire: ",dico2)
-
+print("Liste des cles: ",kle)
+print("Liste des valeurs: ",vale)
 
 #10)
+lis_a=[1,2,3]
+lis_b=[4,5,6]
+lis_c=[7,8,9]
+
+a_1=set(lis_a)
+a_2=set(lis_b)
+a_3=set(lis_c)
+
+a_yo=a_1.union(a_2,a_3)
+
+tout_lis=list(a_yo)
+
+print("Men 3 lis yo reuni: ",tout_lis)
+
+
