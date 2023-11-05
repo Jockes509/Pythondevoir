@@ -1,0 +1,65 @@
+#1) 
+ld2=[]
+
+n=100
+for nbr in range (n+1):
+    if nbr%2==0:
+        ld2.append(nbr)
+print("la liste des eleents divisible par 2 est: ",ld2)
+        
+#2)
+list_int=[3,6,9,4,6,7,78,1]
+list_ch=[str(int) for int in list_int]
+print("liste converti: ",list_ch)
+
+#3)
+list_min=["mwen","ou","nou","albert","bens"]
+list_maj=[a.upper() for a in list_min]
+print("La liste en majuscule ",list_maj)
+
+#4)
+list_int2=list(range(21))
+list_d3=[x for x, int2 in enumerate(list_int2) if int2 %3==0 ]
+print("indx des elements divisible par 3: ",list_d3)
+
+#5)
+
+list_tuple=[(list_int2[c], list_int2[c+1], list_int2[c+2]) for c in range(0, len(list_int2), 3)]
+print("Liste groupe tuple: ",list_tuple)
+
+#6)
+list_doublon=[1,1,1,2,2,3,4,5,6,6,6,7,7,8,8,8,8]
+list_s_doub=list(set(list_doublon))
+
+print("voici la liste sans doublon: ",list_s_doub)
+
+
+#7)
+l1=[1,4,4,5,6,7,8,9]
+l2=[1,4,8,2,3]
+
+e1=set(l1)
+e2=set(l2)
+
+list_commun= list(e1.intersection(e2))
+print("Men lis ki gen elemean commun yo: ",list_commun)
+
+#8)
+dico= {"nom": "paula", "prenom":"dicaprio","sexe":"f","date-n":"2000"}
+
+list_tup= [(kle,vale) for kle, vale in dico.items()]
+print("resultat #8: ",list_tup)
+
+#9)
+tuple1=list_tup
+
+dico2={}
+
+for clave, valor in tuple1: 
+    dico2[clave]= valor
+print("Dico2 steeve: ",dico2)
+    
+print("Le dictionnaire: ",dico2)
+
+
+#10)
