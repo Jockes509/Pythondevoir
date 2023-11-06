@@ -68,5 +68,41 @@ def kripte_mo(mot):
     
     return mo_krip
 
+#8)
+mot_cryp="4-8-11-10-2-17"
+def dekripte_mo(mot_cryp):
+    alfabe="abcdefghijklmnopqrstuvwxyz"
+    ind=mot_cryp.split('-')
+    mo_decryp=""
+    
+    for indeks in ind:
+        if indeks.isdigit():
+            indeks=int(indeks)-1
+            if 0<=indeks<len(alfabe):
+                let=alfabe[indeks]
+                mo_decryp+= let
+            else:
+                mo_decryp+= '?'
+        else:
+            mo_decryp+=indeks
+    
+    return mo_decryp
+
+#9) 
+def permute_val(a,b):
+    a,b=b,a
+    
+    return (a,b)
+
+#10)
+def non_inisyal(non):
+    inisyal=[]
+    for nom in non:
+        non_konp=nom.split('-')
+        inisyal_non=''.join([part[0] for part in non_konp if part])
+        inisyal.append(inisyal_non)
+    
+    return inisyal
+       
 
 
