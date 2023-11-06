@@ -45,4 +45,28 @@ def slug_jene(ch):
     
     return ch
 
+#6)
+mo="Ayiti"
+def sep_vir(mo):
+    let=[let for let in mot]
+    msv=', '.join(let)
+    return msv
+
+#7)
+def kripte_mo(mot):
+    alfabe="abcdefghijklmnopqrstuvwxyz"
+    mo_krip=[]
+    
+    for letr in mo:
+        if letr.isalpha():
+            index= alfabe.index(letr.lower())+1
+            mo_krip.append(str(index))
+        else:
+            mo_krip.append(letr)
+    
+    mo_krip='-'.join(mo_krip)
+    
+    return mo_krip
+
+
 
